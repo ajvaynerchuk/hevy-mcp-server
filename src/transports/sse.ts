@@ -64,6 +64,7 @@ export function createSSETransport(
     helmet({
       contentSecurityPolicy: {
         directives: {
+app.set('trust proxy', 1);
           defaultSrc: ["'self'"],
           scriptSrc: ["'self'"],
           styleSrc: ["'self'"],
